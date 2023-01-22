@@ -1,4 +1,6 @@
 .user-short-info {
+    align-items: center !important;
+
     &__image {
         width: 142px;
         height: 142px;
@@ -36,15 +38,19 @@
     }
 
     &__name {
-        font-size: 55px;
+        font-size: 28px;
         text-transform: uppercase;
         line-height: .9;
         flex-direction: column;
         max-width: 300px;
+
+        @include desktop {
+            font-size: 55px;
+        }
     }
 
     &__occupation {
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 600;
         background: var(--dark-gray);
         color: #fff;
@@ -52,5 +58,9 @@
         border-radius: 30px;
         line-height: 1;
         margin-top: 8px;
+
+        @include desktop {
+            font-size: 18px;
+        }
     }
 }

@@ -19,11 +19,16 @@
 
 .whatsapp-qr {
     position: absolute;
-    width: 178px;
-    height: 178px;
+    width: 120px;
+    height: 120px;
     top: 10px;
     right: 10px;
     mix-blend-mode: darken;
+
+    @include desktop {
+        width: 178px;
+        height: 178px;
+    }
 
     img {
         width: 100%;
