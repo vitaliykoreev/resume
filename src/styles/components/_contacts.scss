@@ -1,3 +1,5 @@
+@use "../mixins" as m;
+
 .contact-item {
     align-items: center !important;
     text-decoration: none;
@@ -29,7 +31,7 @@
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
 
-    @include desktop {
+    @include m.desktop {
         width: 178px;
         height: 178px;
     }

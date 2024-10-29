@@ -1,3 +1,5 @@
+@use "../mixins" as m;
+
 .user-short-info {
     align-items: center !important;
 
@@ -44,7 +46,7 @@
         flex-direction: column;
         max-width: 300px;
 
-        @include desktop {
+        @include m.desktop {
             font-size: 55px;
         }
     }
@@ -59,7 +61,7 @@
         line-height: 1;
         margin-top: 8px;
 
-        @include desktop {
+        @include m.desktop {
             font-size: 18px;
         }
     }

@@ -1,3 +1,5 @@
+@use "mixins" as m;
+
 * {
     padding: 0;
     margin: 0;
@@ -29,7 +31,7 @@ h1, h2, h3, h4 {
     align-items: stretch;
     flex-wrap: wrap;
 
-    @include tablet {
+    @include m.tablet {
         flex-wrap: nowrap;
     }
 }
@@ -38,7 +40,7 @@ h1, h2, h3, h4 {
     width: 100%;
     padding: 20px;
 
-    @include desktop {
+    @include m.desktop {
         width: 50%;
         padding: 90px;
     }
